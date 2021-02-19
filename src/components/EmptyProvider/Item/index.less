@@ -1,0 +1,24 @@
+.icon-error {
+  cursor: pointer;
+  color: @error-color;
+  &.slide {
+    &:hover {
+      animation: slide .7s linear infinite;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(3px);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

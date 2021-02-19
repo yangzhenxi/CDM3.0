@@ -1,0 +1,86 @@
+.multitab {
+  margin: -24px -24px 24px -24px;
+  background: #fff;
+}
+
+.multitab-wrapper {
+  border-bottom: 1px solid @gray-4;
+  /deep/ .ant-tabs-bar {
+    margin: 0;
+  }
+  /deep/ .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+    margin-right: 0;
+    line-height: 42px;
+    border: none;
+    padding: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 0;
+      height: 100%;
+      border-bottom: 3px solid @primary-color;
+    }
+    .ant-tabs-close-x {
+      z-index: 3;
+    }
+    &.ant-tabs-tab-active {
+      box-shadow: 0 0 4px @gray-4;
+      &::before {
+        width: 100%;
+        left: 0;
+        transition-delay: 0.1s;
+      }
+      & ~ .ant-tabs-tab::before {
+        left: 0;
+      }
+    }
+  }
+  /deep/ .ant-tabs-tab-prev, .ant-tabs-tab-next {
+    border: none;
+  }
+}
+
+.dropdown-item {
+  display: block;
+  position: relative;
+  padding: 0 16px;
+  user-select: 'none';
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+.icon-close, .icon-affix {
+  width: 16px;
+  height: 14px;
+  margin-right: -5px !important;
+  margin-left: 3px;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.45) !important;
+  overflow: hidden;
+  z-index: 3;
+  transition: all 0.3s;
+  &:hover {
+    color: @heading-color !important;
+  }
+}
+
+.topmenu .multitab-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.topmenu.content-width-Fluid .multitab-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+

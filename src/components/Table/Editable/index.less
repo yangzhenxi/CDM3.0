@@ -1,0 +1,40 @@
+.editable-cell {
+  height: 40px;
+  .editable-cell-text, .text {
+    padding: 8px 12px;
+    .value {
+      .textOverflow
+    }
+  }
+  .editable-cell-text {
+    cursor: pointer;
+    &:hover {
+      border: 1px solid @gray-4;
+      border-radius: 4px;
+      padding: 7px 11px;
+      .editable-cell-text-operator {
+        opacity: 1;
+      }
+    }
+  }
+  .editable-cell-text-operator {
+    transition: all .3s;
+    opacity: 0;
+  }
+  .editable-cell-form {
+    .error {
+      white-space: nowrap;
+      word-break: break-all;
+    }
+  }
+  /deep/ .ant-form-item {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  /deep/ .ant-form-explain {
+    display: none;
+  }
+  /deep/ .ant-tooltip-inner {
+    max-height: 56px !important;
+  }
+}

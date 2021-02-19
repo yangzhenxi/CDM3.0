@@ -1,0 +1,107 @@
+.table-wrapper {
+  border-bottom: 1px solid @gray-4;
+  .table-content {
+    padding-bottom: 4px;
+    border-bottom: 1px solid @gray-4;
+  }
+  .table-header-group, .table-content-record {
+    .group {
+      padding: 8px 12px;
+    }
+    .header-group-item {
+      text-align: center;
+      .title {
+        font-size: 16px;
+        color: @heading-color;
+        .textOverflow
+      }
+      .value {
+        font-size: 14px;
+        color: @text-color;
+        .textOverflow
+      }
+    }
+  }
+  .table-header-group {
+    min-width: 950px;
+    border-bottom: 1px solid @gray-4;
+    background: #fafafa;
+  }
+  .table-content-record  {
+    min-width: 950px;
+    margin-top: 12px;
+    position: relative;
+    .group {
+      border: 1px dashed #ccc;
+      border-radius: 4px;
+      &.primaryPod, &.standbyPod {
+        transition: .5s;
+      }
+    }
+    .status {
+      position: relative;
+      .link {
+        text-align: center;
+        opacity: 1;
+        transition: .5s;
+      }
+      .list-inline-operator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        opacity: 0;
+        transition: .5s;
+        .ant-btn:not(:last-child) {
+          margin-right: 8px;
+        }
+        .button {
+          opacity: 1;
+          &:hover {
+            opacity: .65;
+          }
+          &.success {
+            color: @green-6
+          }
+          &.info {
+            color: @volcano-6
+          }
+          &.error {
+            color: @red-6
+          }
+        }
+        :first-child {
+          transition: .8s;
+          transform: translateX(-40px);
+        }
+        :last-child {
+          transition: .8s;
+          transform: translateX(40px);
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .group {
+        border: 1px dashed rgba(0, 0, 0, 0);
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+      }
+      .status {
+        .link {
+          opacity: 0;
+        }
+        .list-inline-operator {
+          opacity: 1;
+          :first-child {
+            transform: translateX(0);
+          }
+          :last-child {
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+  }
+}

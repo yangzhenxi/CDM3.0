@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 136">
+  <defs>
+    <style>.cls-2{fill:#ffc032}</style>
+    <radialGradient id="a" cx="6.19" cy="66.81" r="4.26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9d37e"/>
+      <stop offset="1" stop-color="#fcb10a"/>
+    </radialGradient>
+    <linearGradient id="b" x1="100.07" y1="129.84" x2="100.07" y2="5.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9d37e"/>
+      <stop offset="1" stop-color="#fcb10a"/>
+    </linearGradient>
+    <linearGradient id="c" x1="100.07" y1=".5" x2="100.07" y2="135.35" href="#a"/>
+    <linearGradient id="d" x1="38.15" y1="67.91" x2="161.99" y2="67.91" gradientUnits="userSpaceOnUse">
+      <stop offset=".07" stop-color="#fcb10a"/>
+      <stop offset="1" stop-color="#f9d37e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100.07" cy="67.92" r="48.92" fill="#071f41"/>
+  <path d="M23 66.71c10.21 0 18.5 1.12 18.5 2.5s-8.29 2.5-18.5 2.5-18.5-1.12-18.5-2.5 8.28-2.5 18.5-2.5z" fill="url(#a)"/>
+  <path d="M5 64.71a4.5 4.5 0 1 1-4.5 4.5 4.51 4.51 0 0 1 4.5-4.5z" fill="url(#b)"/>
+  <path d="M53.13 19.52a67.17 67.17 0 0 0-20.49 48.39h5.51a61.77 61.77 0 0 1 19.2-44.84zM100.66.5V6A61.92 61.92 0 0 1 162 67.92v.25c1.34-.06 3.41 0 5.51 0v-.22A67.42 67.42 0 0 0 100.66.5zm-.59 129.34A61.94 61.94 0 0 1 44.91 96.1l-4.51 3.23a67.44 67.44 0 0 0 116.51 4.89l-4.25-3.6a61.88 61.88 0 0 1-52.59 29.22z" fill="url(#c)">
+    <animateTransform attributeName="transform" type="rotate" from="0 100.07 67.92" to="360 100.07 67.92" dur="10s" calcMode="linear" repeatCount="indefinite" additive="sum" />
+  </path>
+  <path d="M100.07 6A61.93 61.93 0 1 0 162 67.92 61.93 61.93 0 0 0 100.07 6zm0 120a58.09 58.09 0 1 1 58.09-58.09A58.09 58.09 0 0 1 100.07 126z" fill="url(#d)"/>
+  <circle cx="100.07" cy="67.92" r="53.44" stroke="#ffc032" fill="none" stroke-miterlimit="10">
+    <animate attributeName="opacity" values="1;.2;1" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="53.44;50.44;53.44" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="100.07" cy="67.92" r="48.92" stroke-width=".5" stroke="#ffc032" fill="none" stroke-miterlimit="10">
+    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="r" values="53.44;44.18;53.44" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="100.07" cy="67.92" r="42.18" stroke="#f9cf71" stroke-width=".75" fill="none" stroke-miterlimit="10">
+    <animate attributeName="opacity" values="1;.2;1" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="40.18;44.18;40.18" dur="5s" repeatCount="indefinite" />
+  </circle>
+</svg>
